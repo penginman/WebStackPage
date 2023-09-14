@@ -1,5 +1,80 @@
+# 自己魔改
+
+添加了 `\assets\js` 下的 `build.js` 和 `data.js`
+
+修改`data.js` 模板，单级目录：
+
+```javascript
+{
+  "name": "常用网站",
+  "icon": "fa-solid fa-star",
+  "web": [
+    {
+      "url": "https://www.baidu.com",
+      "logo": "https://www.baidu.com/favicon.ico",
+      "title": "百度",
+      "desc": "百度一下，你就知道"
+    },
+    {
+      "url": "https://www.google.com",
+      "logo": "https://www.google.com/favicon.ico",
+      "title": "谷歌",
+      "desc": ""
+    },
+    {
+      "url": "https://www.bilibili.com",
+      "logo": "https://www.bilibili.com/favicon.ico",
+      "title": "Bilibili",
+      "desc": "哔哩哔哩 (゜-゜)つロ 干杯~"
+    },
+    {
+      "url": "https://www.zhihu.com",
+      "logo": "https://static.zhihu.com/heifetz/favicon.ico",
+      "title": "知乎",
+      "desc": "有问题,就会有答案"
+    },
+  ]
+}
+```
+
+多级目录，添加 `children` 属性然后再嵌套。
+
+```javascript
+{
+  "name": "各种工具",
+  "icon": "fa-solid fa-screwdriver-wrench",
+  "children": [
+    {
+      "name": "开发工具",
+      "web": [
+        {
+          "url": "https://gchq.github.io/CyberChef/",
+          "logo": "https://gchq.github.io/CyberChef/assets/aecc661b69309290f600.ico",
+          "title": "CyberChef",
+          "desc": "解密神器"
+        },
+      ]
+    },
+    {
+      "name": "日常工具",
+      "web": [
+        {
+          "url": "http://ilovepdf.com",
+          "logo": "https://www.ilovepdf.com/img/favicons-pdf/favicon-32x32.png",
+          "title": "iLovePDF",
+          "desc": "PDF合并、转换"
+        },
+      ]
+    }
+  ]
+}
+```
+
+
+
 Webstack网址导航
 ===
+
 ### Demo: [➡️ www.webstack.cc](https://webstack.cc)
 
 QQ群交流：304584722 ; QQ交流群2：740911918
@@ -189,5 +264,4 @@ Screenshot 📷
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-04-infomation.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-05-production.png)
 ![](http://7xnb6x.com1.z0.glb.clouddn.com/webstack-06-production2.png)
-
 
